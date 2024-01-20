@@ -132,7 +132,7 @@ def filter_english_datasets():
             continue
         languages = metadata["language"]
 
-        if "en" in languages or "en-US" in languages:
+        if "ar" in languages or "Arabic" in languages:
             english_datasets.append(dataset_name)
 
     return sorted(english_datasets)

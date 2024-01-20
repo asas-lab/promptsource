@@ -281,7 +281,7 @@ def run_app():
         #
 
         dataset_list = list_datasets()
-        ag_news_index = dataset_list.index("ag_news")
+        ar_default = dataset_list.index("ar_res_reviews")
 
         #
         # Select a dataset - starts with ag_news
@@ -290,7 +290,7 @@ def run_app():
             "Dataset",
             dataset_list,
             key="dataset_select",
-            index=ag_news_index,
+            index=ar_default,
             help="Select the dataset to work on.",
         )
 
